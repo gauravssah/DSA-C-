@@ -34,25 +34,67 @@ int main()
     // cout << "Aftre Reversing the No : " << rev;
 
     // <-------------- Palindrome Number -------------->
-    int x;
-    cout << "Enter Your Number :" << endl;
-    cin >> x;
-    int dupx = x;
-    int rev = 0;
+    // int x;
+    // cout << "Enter Your Number :" << endl;
+    // cin >> x;
+    // int dupx = x;
+    // int rev = 0;
 
-    while (x > 0)
+    // while (x > 0)
+    // {
+    //     int lastDigit = x % 10;
+    //     rev = rev * 10 + lastDigit;
+    //     x = x / 10;
+    // }
+
+    // if (rev == dupx)
+    // {
+    //     cout << "This is a Palindrome Number" << endl;
+    // }
+    // else
+    // {
+    //     cout << "This is Not Palindrome Number" << endl;
+    // }
+
+    // ------------------------>
+
+    // int n = 36;
+    // int i = 1;
+    // int sum = 0;
+
+    // while (i <= n)
+    // {
+    //     if (n % i == 0)
+    //     {
+    //         sum++;
+    //     }
+    //     i++;
+    // }
+
+    // cout << sum;
+
+    // ------------------------------>
+
+    // Prime Number
+
+    cout << "Enter Your Number : " << endl;
+    int n;
+    cin >> n;
+    int count = 0;
+    for (int i = 1; i <= n; i++)
     {
-        int lastDigit = x % 10;
-        rev = rev * 10 + lastDigit;
-        x = x / 10;
+        if (n % i == 0)
+        {
+            count++;
+        }
     }
 
-    if (rev == dupx)
+    if (count == 2)
     {
-        cout << "This is a Palindrome Number" << endl;
+        cout << n << " Is a Prime Number" << endl;
     }
     else
     {
-        cout << "This is Not Palindrome Number" << endl;
+        cout << n << " Is Not a Prime Number" << endl;
     }
 }
