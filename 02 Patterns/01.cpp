@@ -108,7 +108,6 @@ void print7(int n)
 }
 
 // 08. -------------->
-
 void print8(int n)
 {
     for (int i = 0; i < n; i++)
@@ -224,6 +223,12 @@ void print11(int n)
     }
 }
 
+// 11. ------------->
+void print12(int N)
+{
+    //
+}
+
 // -----------------main()------------------------
 int main()
 {
@@ -253,6 +258,7 @@ int main()
         // print8(n);
         // print9(n);
         // print10(n);
-        print11(n);
+        // print11(n);
+        print12(n);
     }
 }
