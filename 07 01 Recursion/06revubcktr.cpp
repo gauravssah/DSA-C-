@@ -17,7 +17,6 @@ int main()
     int n;
     cout << "Enter Your Number :" << endl;
     cin >> n;
-
     cout << "start printing.." << endl;
     reverprintingusingbacktracking(1, n);
     cout << "End printing.." << endl;
