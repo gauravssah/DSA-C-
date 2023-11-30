@@ -5,7 +5,7 @@ int counts = 0;
 
 void printCounter()
 {
-    if (counts == 5)
+    if (counts == 5) // This is the base case from where the recursion going to back. and stop executing.
     {
         return;
     };
