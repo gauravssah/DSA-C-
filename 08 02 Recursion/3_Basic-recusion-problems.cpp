@@ -62,14 +62,14 @@ void printing1ToNbyBacktracking(int n)
 
 // -------- Q. [05] -------->
 
-void printingNto1ByBacktracking(int n)
+void printingNto1ByBacktracking(int i, int n)
 {
-    if (n < 1)
+    if (i > n)
     {
         return;
     }
-    cout << n << endl;
-    printingNto1ByBacktracking(n - 1);
+    printingNto1ByBacktracking(i + 1, n);
+    cout << i << endl;
 }
 
 int main()
@@ -114,7 +114,7 @@ int main()
     cout << "Enter The Number. " << endl;
     cin >> num;
     cout << "Start Printing (By backtracking)..." << endl;
-    printingNto1ByBacktracking(num);
+    printingNto1ByBacktracking(1, num);
 
     return 0;
 }
